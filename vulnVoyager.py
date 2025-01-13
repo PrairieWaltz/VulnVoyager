@@ -1,10 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
+from colorama import Fore, Style
+from time import sleep
+import pyfiglet
 import argparse
 import json
 import ssl
 import socket
 import os
+import subprocess
+import sys
 from concurrent.futures import ThreadPoolExecutor
 
 # Define required headers
@@ -13,6 +18,28 @@ REQUIRED_HEADERS = [
     "X-Frame-Options",
     "X-Content-Type-Options",
 ]
+
+
+def install_dependencies():
+    try:
+        # Suppress all output except errors
+        print("Checking and installing dependencies (this may take a moment)...")
+        subprocess.check_call(
+            [sys.executable, "-m", "pip", "install", "-r", "requirements.txt"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        print("all done...")
+    except subprocess.CalledProcessError:
+        print(Fore.CYAN + Style.BRIGHT)
+        print("Warning: Some dependencies could not be installed.")
+        print(f"Some features might not work as expected.")
+        print(Fore.WHITE)
+
+
+def display_banner():
+    banner = pyfiglet.figlet_format("VulnVoyager", font="ogre")
+    print(banner)
 
 
 def check_headers(url):
@@ -205,4 +232,11 @@ def main():
 
 
 if __name__ == "__main__":
+    install_dependencies()
+    sleep(1)
+    print("\nStarting scans......")
+    print(Fore.RED + Style.BRIGHT)
+    display_banner()
+    print(Fore.WHITE)
+    sleep(1)
     main()

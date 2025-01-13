@@ -1,6 +1,6 @@
 # VulnVoyager Vulnerability Scanner
 
-The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze websites for common security issues. By combining HTTP header checks, SSL/TLS validation, and secure cookie analysis with multithreaded link crawling, this app provides a comprehensive overview of a website's security posture. Users can customize their scans with various command-line flags or rely on sensible default settings for quick checks.
+**VulnVoyager** is a Python-based vulnerability scanner that evaluates the security posture of websites. It combines HTTP header checks, SSL/TLS validation, secure cookie analysis, and link crawling to provide a comprehensive report on potential vulnerabilities. This tool is designed for web developers, security professionals, and enthusiasts aiming to strengthen web application security.
 
 ---
 
@@ -8,7 +8,7 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
 
 ### 1. **HTTP Header Analysis**
 
-- Checks for critical security headers:
+- Identifies missing or improperly configured security headers, such as:
   - `Content-Security-Policy`
   - `X-Frame-Options`
   - `X-Content-Type-Options`
@@ -20,11 +20,11 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
 - Ensures secure HTTPS configurations are in place.
 - Detects expired or misconfigured certificates.
 
-### 3. **Secure Cookie Check**
+### 3. **Cookie Security Analysis**
 
-- Analyzes `Set-Cookie` headers for:
-  - `Secure` flag to prevent transmission over unencrypted connections.
-  - `HttpOnly` flag to protect cookies from JavaScript-based attacks.
+- Evaluates cookies for:
+  - `Secure` flag to prevent unencrypted transmission.
+  - `HttpOnly` flag to protect against JavaScript-based attacks.
 - Flags insecure cookies for review.
 
 ### 4. **Multithreaded Link Crawling**
@@ -86,12 +86,45 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
    - Default: `1`.
    - Example: `python3 vulnVoyager.py -u https://URLHERE.com -d 3`
 
+### Example Usage
+
+```bash
+python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/results.json -d 2
+```
+
 ---
 
-## Why Use This App?
+## Why Use VulnVoyager?
 
-- **Ease of Use**: Command-line flags and interactive prompts make it accessible for beginners and advanced users alike.
-- **Customizable**: Allows fine-tuned scans tailored to specific needs.
-- **Comprehensive**: Combines multiple security checks into a single tool, saving time and effort.
+- **Efficiency**: Combines multiple security checks into one tool.
+- **Customizable**: Allows tailored scans based on user needs.
+- **Ease of Use**: Simple CLI with interactive prompts for ease of operation.
+- **Comprehensive**: Provides detailed reports for informed decision-making.
 
-This scanner is an essential tool for web developers, security professionals, and enthusiasts looking to bolster their web application security.
+**VulnVoyager** is a must-have for anyone looking to assess and improve their website’s security, making it invaluable for both beginners and professionals.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-repo/VulnVoyager.git
+   cd VulnVoyager
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the app:
+   ```bash
+   python3 vulnVoyager.py -u https://example.com
+   ```
+
+Enjoy seamless and comprehensive web security scanning with VulnVoyager!
+
+---
