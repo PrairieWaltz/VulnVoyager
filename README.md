@@ -46,8 +46,8 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
 
    - Users can provide a target URL via the `--url` or `-u` flag.
    - The app validates the URL and begins scanning the website.
-   - EXAMPLE: Scan a chosen URL and save the file as scan.txt to Desktop using a depth of 2
-   - `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/scan.txt(scan.json) -d 2`
+   - EXAMPLE: Scan a chosen URL and save the file as results.txt to the Desktop using a search depth of 2
+   - `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/results.txt(results.json) -d 2`
 
 2. **Scanning Process**
 
@@ -62,7 +62,7 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
 
 ---
 
-## Spotlight: Using Flags and Default Settings
+## Flags and Default Settings
 
 ### Default Behavior
 
@@ -73,18 +73,18 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
 1. **`--url` or `-u`** (Required):
 
    - Specify the target URL to scan.
-   - Example: `python3 vuln_scanner.py -u https://example.com`
+   - Example: `python3 vulnVoyager.py -u https://URLHERE.com`
 
 2. **`--output` or `-o`**:
 
    - Define the output file's name and location.
    - Supports `.json` or `.txt` formats.
-   - Example: `python3 vuln_scanner.py -u https://example.com -o ~/Desktop/results.txt`
+   - Example: `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/results.txt`
 
 3. **`--depth` or `-d`**:
    - Specify the crawling depth for discovering links.
    - Default: `1`.
-   - Example: `python3 vuln_scanner.py -u https://example.com -d 3`
+   - Example: `python3 vulnVoyager.py -u https://URLHERE.com -d 3`
 
 ---
 
