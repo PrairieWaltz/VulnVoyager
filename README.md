@@ -109,7 +109,12 @@ Enjoy seamless and comprehensive web security scanning with VulnVoyager!
    - Supports `.json` or `.txt` formats.
    - Example: `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/results.txt`
 
+JSON Formatting:
+
 ![vulnVoyager_Data](https://github.com/user-attachments/assets/a5f5c261-62c2-4027-a800-9d017bd78e8c)
+
+Plain Text Formatting:
+
 ![vulnVoyager_TXTData](https://github.com/user-attachments/assets/61b254db-650b-4754-abfc-ffc95d8f9df3)
 
 4. **`--depth` or `-d`**:
