@@ -4,6 +4,30 @@
 
 ---
 
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/PrairieWaltz/VulnVoyager
+   cd VulnVoyager
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the app:
+   ```bash
+   python3 vulnVoyager.py -u https://example.com
+   ```
+
+Enjoy seamless and comprehensive web security scanning with VulnVoyager!
+
+---
+
 ## Features
 
 ### 1. **HTTP Header Analysis**
@@ -102,29 +126,5 @@ python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/results.json -d 2
 - **Comprehensive**: Provides detailed reports for informed decision-making.
 
 **VulnVoyager** is a must-have for anyone looking to assess and improve their website’s security, making it invaluable for both beginners and professionals.
-
----
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/PrairieWaltz/VulnVoyager
-   cd VulnVoyager
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the app:
-   ```bash
-   python3 vulnVoyager.py -u https://example.com
-   ```
-
-Enjoy seamless and comprehensive web security scanning with VulnVoyager!
 
 ---
