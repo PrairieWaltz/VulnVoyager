@@ -1,6 +1,6 @@
-# VulnVoyage Vulnerability Scanner
+# VulnVoyager Vulnerability Scanner
 
-The Enhanced Vulnerability Scanner is a versatile tool designed to analyze websites for common security issues. By combining HTTP header checks, SSL/TLS validation, and secure cookie analysis with multithreaded link crawling, this app provides a comprehensive overview of a website's security posture. Users can customize their scans with various command-line flags or rely on sensible default settings for quick checks.
+The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze websites for common security issues. By combining HTTP header checks, SSL/TLS validation, and secure cookie analysis with multithreaded link crawling, this app provides a comprehensive overview of a website's security posture. Users can customize their scans with various command-line flags or rely on sensible default settings for quick checks.
 
 ---
 
