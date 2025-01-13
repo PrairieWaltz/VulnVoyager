@@ -47,7 +47,7 @@ The VulnVoyager Vulnerability Scanner is a versatile tool designed to analyze we
    - Users can provide a target URL via the `--url` or `-u` flag.
    - The app validates the URL and begins scanning the website.
    - EXAMPLE: Scan a chosen URL and save the file as scan.txt to Desktop using a depth of 2
-     `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/scan.txt(scan.json) -d 2`
+   - `python3 vulnVoyager.py -u https://URLHERE.com -o ~/Desktop/scan.txt(scan.json) -d 2`
 
 2. **Scanning Process**
 
